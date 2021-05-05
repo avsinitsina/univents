@@ -1,0 +1,65 @@
+header {
+  background-color: rgb(167, 210, 224) !important;
+}
+.navbar-collapse {
+  justify-content: space-around !important;
+}
+.navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  margin-right: 0 !important;
+}
+.Header__logo {
+  margin-right: 15px;
+}
+h1.Header__title {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  justify-content: center;
+  margin-right: 10px !important;
+}
+.Header__pages {
+  justify-content: space-around !important;
+  flex-grow: 1;
+  min-height: 43px !important;
+}
+.Header__settings {
+  padding-left: 30px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.Header__settings a:first-child {
+  margin-right: 10px !important;
+}
+.Header__page {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 600;
+  font-size: 16px !important;
+  color: black !important;
+  width: fit-content !important;
+}
+.Header__page:focus {
+  border-bottom: 3px solid rgb(25, 129, 155) !important;
+}
+.Header__page:active {
+  border-bottom: 3px solid rgb(25, 129, 155) !important;
+}
+nav {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+#basic-nav-dropdown::after {
+  display: none !important;
+}
+.dropdown-menu.show {
+  min-width: auto !important;
+  max-width: 100px !important;
+}
+a.dropdown-item:active {
+  background-color: rgb(25, 129, 155);
+}
+.Header__wrapper {
+  width: 142px;
+}
