@@ -1,9 +1,14 @@
-import './App.css';
-import Header from './components/Header/Header';
-
+import "./App.css";
+import Header from "./components/Header/Header";
+import SignUp from "./components/Auth/SignUp/SignUp";
 function App() {
   return (
-    <Header/>
+    <>
+      <Header />
+      <div className="container">
+        <SignUp />
+      </div>
+    </>
   );
 }
 

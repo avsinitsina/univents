@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 10px !important;
+  min-height: 92px !important;
+  min-width: 271px !important;
+}
+.error-message {
+  font-size: 12px !important;
+  color: rgb(240, 65, 65);
+  margin-top: 4px;
+}
+
+button {
+    border: 0 !important;
+    font-size: 15px !important;
+    background-color: rgb(38, 162, 198) !important;
+    width: fit-content;
+    align-self: center;
+}
+
