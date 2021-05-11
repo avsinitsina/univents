@@ -12,12 +12,34 @@ form {
   color: rgb(240, 65, 65);
   margin-top: 4px;
 }
-
-button {
-    border: 0 !important;
-    font-size: 15px !important;
-    background-color: rgb(38, 162, 198) !important;
-    width: fit-content;
-    align-self: center;
+form button {
+  border: 0 !important;
+  font-size: 15px !important;
+  background-color: rgb(38, 162, 198) !important;
+  width: fit-content;
+  align-self: center;
+  margin-top: 20px !important;
 }
-
+.auth__navigation {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  width: fit-content;
+  align-self: center;
+}
+.auth__navigation a {
+  text-decoration: none !important;
+  color: #212529;
+}
+.auth__navigation a:hover {
+  color: rgb(38, 162, 198);
+}
+a.auth__link-active {
+  padding-bottom: 2px;
+  border-bottom: 3px solid rgb(38, 162, 198);
+  color: rgb(38, 162, 198);
+}
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+}

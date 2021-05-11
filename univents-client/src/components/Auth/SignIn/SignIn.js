@@ -2,7 +2,6 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import React from "react";
 import { FormGroup, Button } from "react-bootstrap";
 import * as Yup from "yup";
-import "../Auth.css";
 
 function SignIn() {
   return (
