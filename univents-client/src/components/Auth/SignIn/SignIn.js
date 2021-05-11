@@ -3,7 +3,7 @@ import React from "react";
 import { FormGroup, Button } from "react-bootstrap";
 import * as Yup from "yup";
 
-function SignIn() {
+function SignIn({signIn}) {
   return (
     <Formik
       initialValues={{
@@ -18,7 +18,7 @@ function SignIn() {
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+          signIn(values);
           setSubmitting(false);
         }, 400);
       }}

@@ -3,17 +3,15 @@ import "./Auth.css";
 import SignIn from "./SignIn/SignIn";
 import SignUp from "./SignUp/SignUp";
 
-function Auth() {
-  const [selectedContent, setSelectedContent] = React.useState(<SignIn/>);
+function Auth({signIn, signUp}) {
+  const [selectedContent, setSelectedContent] = React.useState(<SignIn signIn={signIn}/>);
   function switchToSignIn(e) {
     e.preventDefault();    
-    setSelectedContent(<SignIn/>);
-    console.log(selectedContent);
+    setSelectedContent(<SignIn signIn={signIn}/>);
   }
   function switchToSignUp(e) {
     e.preventDefault();
-    setSelectedContent(<SignUp/>);
-    console.log(selectedContent);
+    setSelectedContent(<SignUp signUp={signUp}/>);
   }
   return (
     <div className="auth-wrapper">

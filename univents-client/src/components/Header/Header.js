@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import logo from "./logo.svg";
 import user_pic from "./user.svg";
@@ -6,16 +6,7 @@ import settings_pic from "./settings.svg";
 import login_pic from "./login.svg";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-function Header() {
-  const [isAuthorized, setIsAuthorized] = useState(false);
-  function authorize() {
-    console.log("Вы авторизованы");
-    setIsAuthorized(true);
-  }
-  function logout() {
-    console.log("Вы вышли");
-    setIsAuthorized(false);
-  }
+function Header({ isAuthorized, onLogin, onLogout }) {
   return (
     <header>
       <Navbar collapseOnSelect expand="lg">
@@ -48,7 +39,7 @@ function Header() {
           <div className="Header__wrapper">
             {isAuthorized === false ? (
               <Nav className="Header__settings">
-                <Nav.Link onClick={authorize}>
+                <Nav.Link onClick={onLogin}>
                   <img
                     src={login_pic}
                     width="37"
@@ -83,7 +74,7 @@ function Header() {
                   }
                   id="basic-nav-dropdown"
                 >
-                  <NavDropdown.Item onClick={logout}>Выйти</NavDropdown.Item>
+                  <NavDropdown.Item onClick={onLogout}>Выйти</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             )}

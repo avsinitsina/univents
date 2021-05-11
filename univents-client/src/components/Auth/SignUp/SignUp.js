@@ -3,7 +3,7 @@ import React from "react";
 import { FormGroup, Button } from "react-bootstrap";
 import * as Yup from "yup";
 
-function SignUp() {
+function SignUp({ signUp }) {
   function getInstitutes() {
     return [
       "ИМиКН",
@@ -43,7 +43,7 @@ function SignUp() {
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
+          signUp(values);
           setSubmitting(false);
         }, 400);
       }}
@@ -68,6 +68,9 @@ function SignUp() {
         <FormGroup>
           <label htmlFor="institute">Институт</label>
           <Field as="select" name="institute" className="form-control">
+            <option value="" disabled hidden>
+              Выберите
+            </option>
             {getInstitutes().map((inst, index) => (
               <option key={index}>{inst}</option>
             ))}
