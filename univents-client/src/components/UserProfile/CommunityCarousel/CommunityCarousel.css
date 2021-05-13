@@ -1,0 +1,44 @@
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+  width: 14px !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+.carousel-control-prev-icon {
+  margin-left: 5px !important;
+}
+.carousel-control-next-icon {
+  margin-right: 5px !important;
+}
+
+.carousel-item.active {
+  display: flex !important;
+  justify-content: space-around !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.carousel {
+  background-color: white !important;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+}
+.carousel a {
+  font-size: 13px !important;
+  text-decoration: none !important;
+  color: #212529;
+}
+.carousel a:hover {
+  color: rgb(25, 129, 155);
+}
+.carousel__heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.community-pic {
+  margin-left: 10px;
+}
