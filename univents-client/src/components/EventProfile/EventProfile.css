@@ -1,0 +1,106 @@
+.eventprofile {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: -40px;
+  flex-wrap: wrap;
+  margin-top: -20px;
+}
+.eventprofile-main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    margin-right: 40px;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+.eventprofile__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.eventprofile__header-name {
+  font-size: 19px;
+  color: rgb(38, 162, 198) !important;
+}
+.eventprofile__header-edit {
+  margin-left: auto;
+  font-size: 13px;
+  align-self: center;
+}
+.eventprofile__info {
+    display: flex;
+    flex-direction: column;
+}
+.eventprofile__info-main {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.eventprofile__info-button {
+    align-self: center;
+    margin-left: auto;
+
+}
+.eventprofile__info-extra {
+    display: flex;
+}
+.eventprofile__info-community {
+    margin-bottom: 10px;
+}
+.eventprofile__info-type {
+    margin-right: 19px;
+}
+.eventprofile__info-status {
+    color: rgb(236, 4, 4);
+}
+.eventprofile__info-description {
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.eventprofile__info-discipline {
+    font-size: 0.9em;
+    background-color: rgba(197, 9, 197, 0.2);
+    width:fit-content;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.eventprofile__members {
+    flex-grow: 1;
+    margin-right: 40px; 
+    flex-basis: 240px;
+    margin-top: 20px;
+}
+.eventprofile__info-members-label {
+    margin-bottom: 15px;
+    /* margin-top: 19px; */
+    font-size: 14px !important;
+}
+.eventprofile__info-members-list {
+    align-items: stretch;
+}
+.list-group-item {
+    padding: 6px 10px !important;
+    padding-left: 20px !important;
+    font-size: 14px;
+}
+.list-group-item.active{
+    background-color: inherit !important;
+    border-color: rgba(0,0,0,.125) !important;
+    color: #495057 !important;
+}
+.list-group{
+    overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 40vh;
+    border-radius: 4px;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+}
+.list-group-item+.list-group-item.active {
+    margin-top: 0px !important;
+    border-top-width: 0px !important;
+}
