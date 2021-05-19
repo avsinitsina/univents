@@ -23,7 +23,6 @@ h1.Header__title {
 .Header__pages {
   justify-content: space-around !important;
   flex-grow: 1;
-  min-height: 43px !important;
 }
 .Header__settings {
   padding-left: 30px !important;
@@ -39,11 +38,12 @@ h1.Header__title {
   font-size: 16px !important;
   color: black !important;
   width: fit-content !important;
+  border-bottom: 3px solid transparent !important;
 }
 .Header__page:focus {
   border-bottom: 3px solid rgb(25, 129, 155) !important;
 }
-.Header__page:active {
+.Header__page.active {
   border-bottom: 3px solid rgb(25, 129, 155) !important;
 }
 nav {
