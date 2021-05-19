@@ -1,0 +1,34 @@
+.eventfilter {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+.eventfilter__header {
+    display: flex;
+    flex-direction: row;
+}
+.eventfilter__element {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    min-height: 0 !important;
+}
+.eventfilter__select.form-control {
+    margin-left: auto !important;
+    max-width: 180px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.eventfilter__header-clean {
+    font-size: 13px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+.eventfilter__header {
+    margin-bottom: 20px;
+}
+.eventfilter__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
