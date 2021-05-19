@@ -1,0 +1,81 @@
+.userprofile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: -40px;
+  margin-top: -30px;
+  margin-bottom: 40px;
+}
+.userprofile__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: auto;
+  flex-basis: 60%;
+  flex-grow: 1;
+  margin-right: 40px;
+  margin-top: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+  padding: 20px 20px;
+  background-color: white !important;
+  flex-shrink: 2;
+}
+.userprofile__filters {
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+  padding: 10px 15px;
+  flex-grow: 2;
+  margin-right: 40px;
+  margin-top: 30px;
+  background-color: white !important;
+  max-width: 360px;
+}
+.userprofile__pic {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+  margin-right: 30px;
+  align-self: center;
+  flex-grow: 0;
+  margin-top: 10px;
+}
+.userprofile__info-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -10px;
+  align-self: center;
+}
+.userprofile__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 400px;
+  margin-top: 10px;
+}
+.userprofile__institute {
+  margin-bottom: 7px;
+}
+.userprofile__teams {
+  margin-bottom: 20px;
+}
+.userprofile__description {
+  text-align: justify;
+}
+
+.userprofile__name {
+  font-size: 19px;
+  color: rgb(38, 162, 198) !important;
+}
+.userprofile__filters .button-designed {
+  font-size: 12px !important;
+  margin: 0 !important;
+}
+.userprofile__carousels {
+  margin-top: auto;
+}
