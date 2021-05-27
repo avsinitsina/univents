@@ -1,0 +1,33 @@
+.communityentry.form-group {
+  margin-bottom: 10px !important;
+  min-height: 92px !important;
+  min-width: 271px !important;
+}
+.communityentry.error-message {
+  font-size: 12px !important;
+  color: rgb(240, 65, 65);
+  margin-top: 4px;
+}
+form.communityentry button {
+  border: 0 !important;
+  font-size: 15px !important;
+  background-color: rgb(38, 162, 198) !important;
+  width: fit-content;
+  align-self: center;
+  margin-top: 20px !important;
+}
+.form-control.communityentry__form-control {
+  min-width: 300px !important;
+  max-width: 90% !important;
+}
+.communityentry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.communityentry__title {
+  font-size: 24px !important;
+  color: rgb(38, 162, 198);
+  margin-bottom: 20px;
+}
