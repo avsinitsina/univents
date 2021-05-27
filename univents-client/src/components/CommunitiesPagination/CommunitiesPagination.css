@@ -1,0 +1,22 @@
+.communityprofile__events {
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.page-item.active span {
+  background-color: rgb(38, 162, 198) !important;
+  color: white !important;
+  border-color: rgb(38, 162, 198) !important;
+}
+.page-link {
+  font-size: 15px !important;
+  color: rgb(38, 162, 198) !important;
+}
+.community {
+  margin-bottom: 20px;
+  align-self: stretch;
+}
