@@ -1,0 +1,42 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(38, 161, 198, 0.11) !important;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(119, 118, 118, 0.5) !important;
+  padding: 10px 15px;
+}
+.user__avatar {
+  min-height: 80px;
+  min-width: 80px;
+  font-size: 1.1em;
+}
+.user__info {
+  margin-left: 30px;
+}
+.user__name {
+  font-size: 1.1em;
+}
+.user__header {
+  display: flex !important;
+  margin-bottom: 10px;
+}
+.user__description {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+.user__footer {
+  display: flex;
+  margin-top: 10px;
+}
+.user__footer span {
+  margin-bottom: 10px;
+  margin-right: 40px;
+  font-size: 0.9em;
+  background-color: rgba(9, 197, 87, 0.2);
+  width: fit-content;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
