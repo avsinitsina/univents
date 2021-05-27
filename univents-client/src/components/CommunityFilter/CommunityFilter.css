@@ -1,0 +1,34 @@
+.communityfilter {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+}
+.communityfilter__header {
+  display: flex;
+  flex-direction: row;
+}
+.communityfilter__element {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  min-height: 0 !important;
+}
+.communityfilter__select.form-control {
+  margin-left: auto !important;
+  max-width: 180px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.communityfilter__header-clean {
+  font-size: 13px;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.communityfilter__header {
+  margin-bottom: 20px;
+}
+.communityfilter__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
