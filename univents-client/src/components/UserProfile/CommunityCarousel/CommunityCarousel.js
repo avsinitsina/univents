@@ -3,7 +3,7 @@ import "./CommunityCarousel.css";
 import { Carousel } from "react-bootstrap";
 import add_pic from "./add.svg";
 
-function CommunityCarousel({ className, name, items }) {
+function CommunityCarousel({ className, name, items, onAddClick }) {
   const remainder = items.length % 3;
   const pageCount =
     remainder === 0 ? items.length / 3 : (items.length - remainder) / 3 + 1;
@@ -13,7 +13,7 @@ function CommunityCarousel({ className, name, items }) {
       <div className="carousel__heading">
         <div>{name}</div>
         <img
-          onClick={() => console.log("jepa")}
+          onClick={onAddClick}
           src={add_pic}
           width="15px"
           height="15px"

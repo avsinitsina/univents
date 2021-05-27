@@ -4,8 +4,23 @@ import CommunityCarousel from "./CommunityCarousel/CommunityCarousel";
 import up from "./userpic.jpg";
 import EventsPagination from "../EventsPagination/EventsPagination";
 import EventFilter from "../EventFilter/EventFilter";
+import { Modal } from "react-bootstrap";
+import CommunityEntry from "../CommunityEntry/CommunityEntry";
 
 function UserProfile() {
+  const [show, setShow] = React.useState(false);
+
+  function onHide() {
+    setShow(false);
+  }
+
+  function showPopup() {
+    setShow(true);
+  }
+  function createCommunity(values) {
+    console.log(values);
+    setShow(false);
+  }
   const getUserEvents = (page) => {
     return {
       events: [
@@ -15,15 +30,6 @@ function UserProfile() {
       pageCount: 4,
     };
   };
-
-  function getTeams() {
-    return [
-      <a href="#team1">Мяско на коляске</a>,
-      <a href="#team2">WC</a>,
-      <a href="#team3">Сверхразумы</a>,
-      <a href="#team4">Еще одна</a>,
-    ];
-  }
 
   function getCommunities() {
     return [
@@ -36,6 +42,11 @@ function UserProfile() {
 
   return (
     <div className="userprofile__container">
+      <Modal show={show} onHide={onHide}>
+        <Modal.Body>
+          <CommunityEntry createCommunity={createCommunity} />
+        </Modal.Body>
+      </Modal>
       <div className="userprofile">
         <div className="userprofile__info">
           <div className="userprofile__info-main">
@@ -44,15 +55,15 @@ function UserProfile() {
               <div className="userprofile__name">Анна Синицина</div>
               <div className="userprofile__institute">ИМиКН</div>
               <p className="userprofile__description">
-                Я очень люблю ЧГК и математику! Зовите меня на все мероприятия интеллектуального клуба ТюмГу :3
+                Я очень люблю ЧГК и математику! Зовите меня на все мероприятия
+                интеллектуального клуба ТюмГу :3
               </p>
               <div className="userprofile__carousels">
                 <CommunityCarousel
-                  className="userprofile__teams"
-                  name="Команды"
-                  items={getTeams()}
+                  name="Сообщества"
+                  items={getCommunities()}
+                  onAddClick={showPopup}
                 />
-                <CommunityCarousel name="Сообщества" items={getCommunities()} />
               </div>
             </div>
           </div>
